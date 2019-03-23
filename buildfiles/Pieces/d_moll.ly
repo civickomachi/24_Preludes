@@ -107,11 +107,11 @@
 	<c aes>4. <bes g> \bar "|"
 	<aes f>4. <g es> \bar "|"
 
-	d,8 <f' a,>4 g,8 <g' b,>4 \bar "|"
-	d,8 <f' a,>4 g,8 <g' b,>4 \bar "|"
+	d,8 <f' a,>4 g,8 <b' d,>4 \bar "|"
+	d,,8 <f' a,>4 g,8 <b' d,>4 \bar "|"
 	s2._\markup {\italic senza \italic pedale} \bar "|"
 	\stemDown \tieDown
-	d,2.~_\markup {\italic r.h.} \sustainOn \sf \bar "|"
+	d,,2.~_\markup {\italic r.h.} \sustainOn \sf \bar "|"
 	d2.~ \bar "|"
 	d2
 	\bar "|."
