@@ -1,0 +1,10 @@
+all : 24_Preludes.ly
+	lilypond 24_Preludes.ly
+
+tex : 24_Preludes_tex.lytex
+	lilypond-book --output=./LilyPondPrecompile --pdf 24_Preludes_tex.lytex
+	cd LilyPondPrecompile
+	pdflatex 24_Preludes_tex
+
+clean :
+	rm 24_Preludes.pdf

@@ -1,0 +1,9 @@
+\documentclass{article}
+
+\begin{document}
+
+
+\lilypondfile[quote, fragment, staffsize=24]{./24_Preludes.ly}
+
+
+\end{document}

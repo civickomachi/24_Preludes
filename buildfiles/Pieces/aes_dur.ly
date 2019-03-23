@@ -1,0 +1,231 @@
+\score {
+  \new PianoStaff <<
+    \new Staff \relative c'' {
+      \clef treble
+      \key aes \major
+      \time 5/4
+
+      \mark "Allegro moderato"
+% Menuet - A
+      \repeat volta 2 {
+        <c aes es>4 \mf <c aes es> <bes g es> <c aes es> <f des aes> \bar "|"
+	<aes, f c>4 <aes f c> <bes f des>
+	<< { <c g>2 } \\ { f,4( e) } >> \bar "|"
+	<aes f des>4 <aes f des> <g f des> <aes f des> <des aes f> \bar "|"
+	<g, e c>4 <g e c> <aes e c>
+	<< { <f c>2 } \\ { bes,4( aes) } >> \bar "|"
+      }
+      
+% Menuet - B
+      \repeat volta 2 {
+        <f'' des aes>4 \mp <f des aes> <es c aes> <f des aes> <aes es c> \bar "|"
+	<es c aes>4 <es c aes> <des bes aes> <es c aes> <f c f,> \bar "|"
+	<des bes f>4 <des bes f> <c a f> <des bes f> <f bes, f> \bar "|"
+	<c a f>4 \> <c a f> <des bes f> <bes g es> <des bes es,> \! \bar "|"
+        <c aes es>4 \< <c aes es> <bes g es> <c aes es> <f des aes> \! \bar "|"
+	<aes, f c>4 <aes f c> <bes f des>
+	<< { <c g>2 } \\ { f,4( e) } >> \bar "|"
+	<des' aes f>4 \> <des aes f> <es bes g> <c aes es> <aes f des> \bar "|"
+	<bes g es>4 <bes g es> <g es des> \!
+	<< { <aes es>2 \p } \\ { des,4( c) } >> \bar "|"
+      }
+
+      \break
+      \key c \minor
+      \time 7/4
+
+% Trio - A
+      \repeat volta 2 {
+        \clef bass
+	\mark "TRIO"
+
+	\tuplet 3/2 { g8_\markup {\italic sempre \italic legato} \pp [es c] }
+	\tuplet 3/2 { g'8 [es c] }
+	\tuplet 3/2 { g'8 [es c] }
+	\tuplet 3/2 { g'8 [es c] }
+	\tuplet 3/2 { f8 [d bes] }
+	\tuplet 3/2 { f'8 [d bes] }
+	\tuplet 3/2 { f'8 [d bes] }
+	\bar "|"
+	\tuplet 3/2 { es8 [c aes] }
+	\tuplet 3/2 { es'8 [c aes] }
+	\tuplet 3/2 { es'8 [c aes] }
+	\tuplet 3/2 { es'8 [c aes] }
+	\tuplet 3/2 { es'8 [bes g] }
+	\tuplet 3/2 { es'8 [bes g] }
+	\tuplet 3/2 { es'8 [bes g] }
+	\bar "|"
+	\tuplet 3/2 { f'8 [des aes] }
+	\tuplet 3/2 { f'8 [des aes] }
+	\tuplet 3/2 { f'8 [des aes] }
+	\tuplet 3/2 { f'8 [des aes] }
+	\tuplet 3/2 { es'8 [bes g] }
+	\tuplet 3/2 { es'8 [bes g] }
+	\tuplet 3/2 { es'8 [bes g] }
+	\bar "|"
+	\tuplet 3/2 { f'8 [des aes] }
+	\tuplet 3/2 { f'8 [des aes] }
+	\tuplet 3/2 { f'8 [des aes] }
+	\tuplet 3/2 { f'8 [des aes] }
+	\tuplet 3/2 { g'8 [es bes] }
+	\tuplet 3/2 { g'8 [es bes] }
+	\tuplet 3/2 { g'8 [es bes] }
+	\bar "|"
+	aes'4( \p
+	\clef treble
+	c4 des es des aes f) \bar "|"
+	g4( bes c des c g
+	\clef bass
+	es) \bar "|"
+	f4( aes bes c bes f des) \bar "|"
+	e4( c e g bes aes f) \bar "|"
+      }
+
+% Trio - B
+      \repeat volta 2 {
+        \tuplet 3/2 { e8 \pp [g c] }
+        \tuplet 3/2 { e,8 [g c] }
+        \tuplet 3/2 { e,8 [g c] }
+        \tuplet 3/2 { e,8 [g c] }
+        \tuplet 3/2 { e,8 [g c] }
+        \tuplet 3/2 { e,8 [g c] }
+        \tuplet 3/2 { e,8 [g c] }
+	\bar "|"
+	\tuplet 3/2 { c,8 [e a] }
+	\tuplet 3/2 { c,8 [e a] }
+	\tuplet 3/2 { c,8 [e a] }
+	\tuplet 3/2 { c,8 [e a] }
+	\tuplet 3/2 { c,8 [e a] }
+	\tuplet 3/2 { c,8 [e a] }
+	\tuplet 3/2 { c,8 [e a] }
+	\bar "|"
+	\tuplet 3/2 { b,8 [e g] }
+	\tuplet 3/2 { b,8 [e g] }
+	\tuplet 3/2 { b,8 [e g] }
+	\tuplet 3/2 { b,8 [e g] }
+	\tuplet 3/2 { b,8 [e g] }
+	\tuplet 3/2 { b,8 [e g] }
+	\tuplet 3/2 { b,8 [e g] }
+	\bar "|"
+	\tuplet 3/2 { bes,8 [es g] }
+	\tuplet 3/2 { es8 [g bes] }
+	\clef treble
+	\tuplet 3/2 { g8 [bes es] }
+	\tuplet 3/2 { bes8 \> [es g] }
+	\tuplet 3/2 { aes,8 [des f] }
+	\tuplet 3/2 { bes,8 [es g] }
+	\tuplet 3/2 { aes,8 [des f \! ] }
+	\bar "|"
+      }
+    }
+
+    \new Staff \relative c {
+      \clef bass
+      \key aes \major
+      \time 5/4
+
+% Menuet - A
+      \repeat volta 2 {
+        aes'4 \sustainOn aes \sustainOn es \sustainOn aes \sustainOn des, \sustainOn \bar "|"
+	f4 \sustainOn f \sustainOn des \sustainOn c2 \sustainOff \bar "|"
+	des4_\markup {\italic simile} des c bes bes \bar "|"
+	c4 c c f2 \bar "|"
+      }
+      
+% Menuet - B
+      \repeat volta 2 {
+        des4 des aes des aes \bar "|"
+	aes4 aes es aes a \bar "|"
+	bes4 bes f bes bes \bar "|"
+	f4 f bes, des es \bar "|"
+	aes4 aes es' aes des, \bar "|"
+	f4 f des c2 \bar "|"
+	bes4 bes es aes bes \bar "|"
+	es,4 es es, aes2 \bar "|"	
+      }
+
+      \break
+      \mark "TRIO"
+      \key c \minor
+      \time 7/4
+
+% Trio - A
+      \repeat volta 2 {
+        c,4 \sustainOn \p
+	\clef treble
+	c'''4( d es d \sustainOn bes g) \bar "|"
+	\clef bass
+	aes,,,4 \sustainOn
+	\clef treble
+	aes'''4( bes c bes \sustainOn g es) \bar "|"
+	\clef bass
+	des,,4 \sustainOn
+	\clef treble
+	f''4( g aes g \sustainOn es bes) \bar "|"
+	\clef bass
+	des,,4 \sustainOn
+	\clef treble
+	f''4( g aes bes \sustainOn g es) \bar "|"
+	\clef bass
+	\tuplet 3/2 { f,,8 \sustainOff \pp [aes c] }
+	\tuplet 3/2 { f,8 [aes c] }
+	\tuplet 3/2 { f,8 [aes c] }
+	\tuplet 3/2 { f,8 [aes c] }
+	\tuplet 3/2 { f,8 [aes des] }
+	\tuplet 3/2 { f,8 [aes des] }
+	\tuplet 3/2 { f,8 [aes des] }
+	\bar "|"
+	\tuplet 3/2 { es,8 [g bes] }
+	\tuplet 3/2 { es,8 [g bes] }
+	\tuplet 3/2 { es,8 [g bes] }
+	\tuplet 3/2 { es,8 [g bes] }
+	\tuplet 3/2 { es,8 [g c] }
+	\tuplet 3/2 { es,8 [g c] }
+	\tuplet 3/2 { es,8 [g c] }
+	\bar "|"
+	\tuplet 3/2 { des,8 [f bes] }
+	\tuplet 3/2 { des,8 [f bes] }
+	\tuplet 3/2 { des,8 [f bes] }
+	\tuplet 3/2 { des,8 [f bes] }
+	\tuplet 3/2 { des,8 [f bes] }
+	\tuplet 3/2 { des,8 [f bes] }
+	\tuplet 3/2 { des,8 [f bes] }
+	\bar "|"
+	\tuplet 3/2 { c,8 [g' bes] }
+	\tuplet 3/2 { c,8 [g' bes] }
+	\tuplet 3/2 { c,8 [g' bes] }
+	\tuplet 3/2 { c,8 [g' bes] }
+	\tuplet 3/2 { c,8 [e g] }
+	\tuplet 3/2 { c,8 [e g] }
+	\tuplet 3/2 { c,8 [e g] }
+	\bar "|"
+      }
+
+% Trio - B
+      \repeat volta 2 {
+        c,4 \sustainOn \p
+	\clef treble
+	e'''4( e d e g b, \bar "|"
+	c4) \sustainOn
+	\clef bass
+	a,,,4( a b \sustainOff a g c \bar "|"
+	b4 e,4) \sustainOn
+	\clef treble
+	g'''4( a g fis e \bar "|"
+	es4) \sustainOn
+	\clef bass
+	es,,4 \sustainOff des es1 \bar "|"
+	
+  	\once	\override Score.RehearsalMark.break-visibility = #end-of-line-visible
+  	\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+  	\mark "D.C."
+      }
+
+    }
+  >>
+  \header {
+    piece = "5. A Flat Major"
+  }
+\layout { }
+\midi { }
+}

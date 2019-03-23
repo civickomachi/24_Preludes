@@ -1,0 +1,243 @@
+\score {
+  \new PianoStaff <<
+    \new Staff = "up" {
+
+      \clef treble
+      \key c \minor
+      \omit Staff.TimeSignature
+
+      \relative c' {
+      	\override Beam.breakable = ##t
+      	\cadenzaOn
+    	s8 \tuplet 3/2 {c32_\markup {\italic sotto \italic voce} [^"Cadenza" f bes]} \tuplet 3/2 {aes32 [des ges]} \tuplet 3/2 {\stemUp f32 [bes es]} r4.\fermata \bar ""
+	\tuplet 3/2 {c,,32 [f bes]} \tuplet 3/2 {\stemDown aes32 [des ges]} \tuplet 3/2 {\stemUp f32 [bes es]} r4.\fermata \bar ""
+	\tuplet 3/2 {c,,32 [f bes]} \tuplet 3/2 {\stemDown aes32 [des ges]} \tuplet 3/2 {\stemUp f32 [bes es]}
+	\ottava #1
+	\stemNeutral aes4~ aes16. [aes32] \bar ""
+	es4~ es16 [des] \bar ""
+	ges16 [f des] es8 [bes8]
+	\ottava #0
+	r4.\fermata \bar ""
+    	\tuplet 3/2 {c,,32 [f bes]} \tuplet 3/2 {\stemDown aes32 [des ges]} \tuplet 3/2 {\stemUp f32 [bes es]} r4.\fermata \bar ""
+	\tuplet 3/2 {c,,32 [f bes]} \tuplet 3/2 {\stemDown aes32 [des ges]} \tuplet 3/2 {\stemUp f32 [bes es]} r4.\fermata \bar ""
+	\tuplet 3/2 {c,,32 [f bes]} \tuplet 3/2 {\stemDown aes32 [des ges]} \tuplet 3/2 {\stemUp f32 [bes es]}
+	\ottava #1
+	\stemNeutral aes4~ aes16. [aes32] \bar ""
+	es4~ es16 [des] \bar ""
+	ges16 [f des] es8 [bes8]
+	\ottava #0
+	r4.\fermata \bar ""
+	aes16 [des ges,] f8 [des es bes~] bes4\fermata 
+    	\bar "||"
+    	\cadenzaOff
+
+	\undo \omit Staff.TimeSignature
+
+	\time 3/4
+
+	
+	bes16-1^\markup {Con Moto} \pp [es-2 c-1 f-3 aes-5]
+	bes,16 [es c f aes]
+	bes,16 [es \bar "|" c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f \bar "|" aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [\bar "|" es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c \bar "|" f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f aes] \bar "|"
+	bes,16 [es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es \bar "|" c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f \bar "|" aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [\bar "|" es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c \bar "|" f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f aes] \bar "|"
+	bes,16 [es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es \bar "|" c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f \bar "|" aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [\bar "|" es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c \bar "|" f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f aes] \bar "|"
+	bes,16 [es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es \bar "|" c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f \bar "|" aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [\bar "|" es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c \bar "|" f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f aes] \bar "|"
+	bes,16 [es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es \bar "|" c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f \bar "|" aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [\bar "|" es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c \bar "|" f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f aes] \bar "|"
+	bes,16 [es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es \bar "|" c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f \bar "|" aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [\bar "|" es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c \bar "|" f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f aes] \bar "|"
+	bes,16 [es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es \bar "|" c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f \bar "|" aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [\bar "|" es c f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c \bar "|" f aes]
+	bes,16 [es c f aes]
+	bes,16 [es c f aes] \bar "|"
+	bes,16 [es c f aes] r16 r4.\fermata \bar "||"
+
+	\cadenzaOn
+	\tuplet 3/2 {c,,32 [^"Cadenza" f bes]} \tuplet 3/2 {\stemDown aes32 [des ges]} \tuplet 3/2 {\stemUp f32 [bes es]} r4.\fermata \bar ""
+	\tuplet 3/2 {c,,32 [f bes]} \tuplet 3/2 {\stemDown aes32 [des ges]} \tuplet 3/2 {\stemUp f32 [bes es]} r4.\fermata \bar ""
+	\tuplet 3/2 {c,,32 [f bes]} \tuplet 3/2 {\stemDown aes32 [des ges]} \tuplet 3/2 {\stemUp f32 [bes es]}
+	\ottava #1
+	\stemNeutral aes4~ aes16. [aes32] \bar ""
+	es4~ es16 [des] \bar ""
+	ges16 [f des] es8 [bes8~] bes4 \bar ""
+	aes16 [des
+	\ottava #0
+	ges,] f8 [des es bes~]
+	bes4.\fermata \bar ""
+	<aes es bes>4. <f c g>4.
+	\clef bass
+	<ces ges des>4. <aes es bes>4. r4.\fermata \bar ""
+	r4
+	\clef treble
+	<< {\stemUp <f''' bes, es,>2.} \\ {\stemDown <d, g, c,>2.} >> s16
+	\bar "|."
+	\cadenzaOff	
+      }
+    }
+    \new Staff = "down" {
+    
+      \clef bass
+      \key c \minor
+      \omit Staff.TimeSignature
+
+      \relative c {
+      	\cadenzaOn
+    	s8 \sustainOn s16 s16 s16 s16 s16 s16 s16 s16 s16 \bar ""
+	s16 s16 s16 s16 s16 s16 s16 s16 s16 \bar ""
+	s16 s16 s16 s16 s16 s16 s16 s16 s16 \bar ""
+	s16 s16 s16 s16 s16 s16 \bar ""
+	s16 s16 s16 s8 s8 s16 s16 s16 s16 s16 s16 \bar ""
+	s16 s16 s16 s16 s16 s16 s16 s16 s16 \bar ""
+	s16 s16 s16 s16 s16 s16 s16 s16 s16 \bar ""
+	s16 s16 s16 s16 s16 s16 s16 s16 s16 \bar ""
+	s16 s16 s16 s16 s16 s16 \bar ""
+	s16 s16 s16 s8 s8 s16 s16 s16 s16 s16 s16 \bar ""
+	s16 s16 s16 s8 s8 s8 s8 s4
+    	\bar "||" 
+    	\cadenzaOff
+
+	\undo \omit Staff.TimeSignature
+
+	\time 3/4
+
+	r2. \bar "|"
+	r4 r4 <des' ges,>4 \bar "|"
+	<des, ges,>2.~ \bar "|"
+	<des ges,>2 <des' ges,>4 \bar "|"
+	<des, ges,>2.~ \bar "|"
+	<des ges,>2 <c' f,>4 \bar "|"
+	<c, f,>2.~ \bar "|"
+	<c f,>2 <c' f,>4 \bar "|"
+	<c, f,>2.~ \bar "|"
+	<c f,>2 r4 \bar "|"
+	<c' aes f>2 <es bes g>4~ \bar "|"
+	<es bes g>4 <des aes f>2 \bar "|"
+	<aes f bes,>2 bes,,4~ \bar "|"
+	bes2. \bar "|"
+
+	\clef treble
+	\ottava #2
+	<f'''''' bes,>4. <aes, des,>4. \bar "|"
+
+	\ottava #0
+	\clef bass
+	<c,,, aes f>2 <f bes, g>4 \bar "|"
+	<es bes g>4 <des aes f>2 \bar "|"
+	<aes f bes,>2 bes,,4~ \bar "|"
+	bes2. \bar "|"
+
+	\clef treble
+	\ottava #2
+	<f'''''' bes,>4. <aes, des,>4. \bar "|"
+
+	\ottava #0
+	\clef bass
+	aes,,,,,16 [es' aes bes-4 c es aes]
+	aes,16 [es' aes bes c \bar "|" es aes]
+	ces,16-4 [aes'-1 f-2 es-3 ces-1 aes-2 f-3 es-4 ces-1 aes-2] \bar "|"
+	bes4.-1 bes,4. \bar "|"
+	c16 [g' c d es g c]
+	c,16 [g' c d es \bar "|" g c-1]
+	aes16-2 [f-3 es-4 c-1 aes-2]
+	f16-3 [es-4 c-1 aes-2 f-3] \bar "|"
+	<aes des,>2.~ \bar "|"
+	<aes des,>2 <aes' des,>4 \bar "|"
+	<aes, des,>2.~ \bar "|"
+	<aes des,>2 <f' bes,>4 \bar "|"
+	<f, bes,>2.~ \bar "|"
+	<f bes,>2 <f' bes,>4 \bar "|"
+	<f, bes,>2.~ \bar "|"
+	<f bes,>2 <g' c,>4 \bar "|"
+	<g, c,>2.~ \bar "|"
+	<g c,>2 <g' c,>4 \bar "|"
+	<g, c,>2.\fermata \bar "||"
+	
+	\cadenzaOn
+	s16 s16 s16 s16 s16 s16 s16 s16 s16 \bar ""
+	s16 s16 s16 s16 s16 s16 s16 s16 s16 \bar ""
+	s16 s16 s16 s16 s16 s16 s16 s16 s16 \bar ""
+	s16 s16 s16 s16 s16 s16 \bar ""
+	s16 s16 s16 s8 s8 s4 \bar ""
+	s16 s16 s16 s8 s8 s8 s8 s4. \bar ""
+	<ces, ces,>4. <es es,>4. <fes fes,>4. <ges ges,>4. r4.\fermata \bar ""
+	<d' c,>1 s16 \sustainOff \bar "|."
+	\cadenzaOff
+      }
+    }
+  >>
+  \header {
+    piece = "8. C Minor"
+  }
+\layout { }
+\midi { }
+}

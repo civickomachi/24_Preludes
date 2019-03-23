@@ -1,0 +1,45 @@
+\documentclass[]{jarticle}
+
+\usepackage{graphics}
+\begin{document}
+
+通常の LaTeX テキスト。
+
+{%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{91/lily-73df3638-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+
+次の LaTeX テキスト。オプションは角括弧の中に入れます。
+
+\begin{quote}
+\noindent
+\begin{verbatim}
+d4 c b a
+\end{verbatim}
+{%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{04/lily-aaf0116d-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+\end{quote}
+\end{document}

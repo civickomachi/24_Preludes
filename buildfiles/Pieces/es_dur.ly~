@@ -1,0 +1,108 @@
+\score {
+  \new PianoStaff <<
+    \new Staff = "up" {
+
+      \clef treble
+      \key es \major
+      \time 4/4
+
+      \mark "Largo"
+
+      \relative c'' {
+        r4 \f
+	<< {\stemUp <g' es bes>4 <f des aes>2 } \\ {\stemDown <g, es bes>4 <f des aes>2} >> \bar "|"
+	r4 \dim
+	<< {\stemUp <dis' b fis>4 <cis a e>2} \\ {\stemDown <dis, b fis>4 <cis a e>2} >> \bar "|"
+	\clef bass
+        r4
+	<< {\stemUp <g' es bes>4 <f des aes>2 } \\ {\stemDown <g, es bes>4 <f des aes>2} >> \bar "|"
+	r4 \dim
+	<< {\stemUp <dis' b fis>4 <cis a e>2} \\ {\stemDown <dis, b fis>4 <cis a e>2} >> \stemNeutral \bar "|"
+	<b' g d>4 <a f c> <g es bes> <es ces ges> \bar "|"
+	<e c g>1 \p \bar "||"
+	
+	\clef treble 
+	\ottava #1
+	a'''32 \f [g f e] es4.
+	\ottava #0
+	\clef bass
+	<cis,, a e>4 \p <b gis e>4 \bar "|"
+	<cis a fis>4 <dis bis fis>4 <e cis gis>4.
+	\clef treble
+	\ottava #1
+	gis''32 \f [fis e dis] \bar "|"
+	cis2
+	\ottava #0
+	\clef bass
+	<des,, bes f>4 \p <c a f>4 \bar "|"
+	<des bes f>4 <es c ges>4 <f des aes>4.
+	\clef treble
+	\ottava #1
+	a''32 \f [gis fis e] \bar "|"
+	es2
+	\ottava #0
+	<es,, ces ges>4 \p <des bes ges>4 \cresc \bar "|"
+	<es ces ges>4 <f d aes>4 <ges es bes>4
+	<aes f des>4 \bar "||"
+
+	r4 \f
+	<< {\stemUp <bes' ges des>4 <aes fes ces>2} \\ {\stemDown <bes, ges des>4 <aes fes ces>2} >> \bar "|"
+	r4 \dim
+	<< {\stemUp <fis' d a>4 <e c g>2} \\ {\stemDown <fis, d a>4 <e c g>2} >> \bar "|"
+	\clef bass
+	r4
+	<< {\stemUp <bes' ges des>4 <aes fes ces>2} \\ {\stemDown <bes, ges des>4 <aes fes ces>2} >> \bar "|"
+	r4
+	<< {\stemUp <fis' d a>4 <e c g>2} \\ {\stemDown <fis, d a>4 <e c g>2} >> \bar "|"
+	<d' bes f>4 <c aes es>4 <bes ges des>4 <ges eses beses>4 \bar "|"
+	<g es bes>1 \p \bar "|."
+      }
+    }
+    \new Staff = "down" {
+
+      \clef bass
+      \key es \major
+      \time 4/4
+
+      \relative c {
+        <es es,>2.. \sustainOn <g, g,>32^\markup{\italic r.h.}_\markup{\italic l.h.} \sustainOff [<aes aes,> <a a,> <bes bes,>] \bar "|"
+	<b b,>2.. \sustainOn <b b,>32 \sustainOff [<c c,> <cis cis,> <d d,>] \bar "|"
+	<es es,>2.. \sustainOn <g, g,>32 \sustainOff [<aes aes,> <a a,> <bes bes,>] \bar "|"
+	<b b,>1 \sustainOn \bar "|"
+	g4 \sustainOff f es ces \bar "|"
+	<es c>1 \sustainOn \bar "||"
+
+	\clef treble
+	aes''32 \sustainOff [g f e] es4. \sustainOn
+	\clef bass
+	a,,4 e \bar "|"
+	fis4 gis cis,4. \sustainOn
+	\clef treble
+	gis'''32 \sustainOff [fis e dis] \bar "|"
+	cis2 \sustainOn
+	\clef bass
+	bes,,4 f' \bar "|"
+	bes4 aes des,4. \sustainOn
+	\clef treble
+	a'''32 \sustainOff [gis ais g] \bar "|"
+	es2 \sustainOn
+	\clef bass
+	ces,,4 ges' \bar "|"
+	ces4 bes \sustainOn es, \sustainOn des \sustainOn \bar "||"
+	
+	<ges ges,>2.. \sustainOn <bes, bes,>32 \sustainOff [<b b,> <c c,> <des des,>] \bar "|"
+	<d d,>2.. \sustainOn <d d,>32 \sustainOff [<es es,> <e e,> <f f,>] \bar "|"
+	<ges ges,>2.. \sustainOn <bes, bes,>32 \sustainOff [<b b,> <c c,> <des des,>] \bar "|"
+	<d d,>1 \sustainOn \bar "|"
+	bes'4 \sustainOff aes ges eses \bar "|"
+	<ges es>1 \bar "|."
+      }
+    }
+  >>
+  \header {
+    piece = "7. E Flat Major"
+  }
+\layout { }
+\midi { }
+}
+

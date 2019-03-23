@@ -1,0 +1,109 @@
+\score {
+  \new PianoStaff <<
+    \new Staff \relative c'' {
+      \clef treble
+      \key ges \major
+      \time 4/4
+      \partial 4
+
+% Exposition
+      \repeat volta 4{
+      << { \mark "Allegretto" bes4( \p } \\ { \tuplet 3/2 { bes8[ ges des]} } >> \bar "|"
+      << { ces'4 es des ces8 [ bes] } \\ { \tuplet 3/2 { ces8[ aes des,]} \tuplet 3/2 { es'8[ aes, f]} \tuplet 3/2 { des'8[ bes ges]} \tuplet 3/2 { ces8[ ges des]} } >> \bar "|"
+      << { ges4 bes aes) bes( } \\ { \tuplet 3/2 { ges8[ es aes,]} \tuplet 3/2 { bes'8[ es, c]} \tuplet 3/2 { aes'8[ f des]} \tuplet 3/2 { bes'8[ g es]} } >> \bar "|"
+      << { ces'4 fes bes, ces } \\ { \tuplet 3/2 { ces8[ aes es]} \tuplet 3/2 { fes'8[ aes, fes]} \tuplet 3/2 { bes8[ g es]} \tuplet 3/2 { ces'8[ aes es]} } >> \bar "|"
+      << { a4 g aes) } \\ { \tuplet 3/2 { a8[ e cis]} \tuplet 3/2 { g'8[ es des]} \tuplet 3/2 { aes'8[ es c]} } >>
+      }
+
+
+% Development
+      << { aes'4 \p } \\ { \tuplet 3/2 { aes8[ fes des]} } >> \bar "|"
+      << { aes'2. gis4( \mp} \\ { \tuplet 3/2 { aes8[ es c]} \tuplet 3/2 { aes'8[ es c]} \tuplet 3/2 { aes'8[ es c]} \tuplet 3/2 { gis'8[ e cis]} } >> \bar "|"
+      << { fis4 gis a gis8 [ fis] } \\ { \tuplet 3/2 { fis8[ dis b]} \tuplet 3/2 { gis'8[ e b]} \tuplet 3/2 { a'8[ e cis]} \tuplet 3/2 { gis'8[ dis b]} } >> \bar "|"
+      << { e2) \p d2 } \\ { \tuplet 3/2 { e8[ c g]} \tuplet 3/2 { e'8[ c g]} \tuplet 3/2 { d'8[ b g]} \tuplet 3/2 { d'8[ b g]} } >> \bar "|"
+
+      
+      << { c4\( \mp } \\ { \tuplet 3/2 { c8[ a-2 g-1]} } >>
+      << { e'4 d e } \\ {\stemDown \tuplet 3/2 { fis,8-2[ g-1 a-2]} \tuplet 3/2 { b8-3[ a g]} \tuplet 3/2 { cis8[ b a]} } >> \bar "|"
+      << { \tuplet 3/2 { f'8-3\) \mf [ g-4 a-5]} \tuplet 3/2 { bes8-3[ a-2 g-1]} \tuplet 3/2 { a8-5[ g-4 f-3]} \tuplet 3/2 { g8-4[ f-3 e-1]} } \\ { d4-1( g-1 f-3 d-1 } >> \bar "|"
+      << {\tuplet 3/2 { es8-2 \cresc [ bes es]} \tuplet 3/2 { g8[ a bes~]} bes2} \\ {es,1)} >> \bar "|"
+      r2 \tuplet 3/2 { des8 \f [ aes des]} \tuplet 3/2 { f8[ ges aes]} \bar "|"
+      << { \tuplet 3/2 { des8[ aes des]} \tuplet 3/2 { f8[ ges aes]} des4 } \\ { \tuplet 3/2 { f,,8[ des f]} aes4 r4} >>
+      
+
+% Recapitulation
+      << { bes4( \p } \\ { \tuplet 3/2 { bes8[ ges des]} } >> \bar "|"
+      << { ces'4 es des ces8 [ bes] } \\ { \tuplet 3/2 { ces8[ aes des,]} \tuplet 3/2 { es'8[ aes, f]} \tuplet 3/2 { des'8[ bes ges]} \tuplet 3/2 { ces8[ ges des]} } >> \bar "|"
+      << { ges4 bes aes) bes( \cresc } \\ { \tuplet 3/2 { ges8[ es aes,]} \tuplet 3/2 { bes'8[ es, c]} \tuplet 3/2 { aes'8[ f des]} \tuplet 3/2 { bes'8[ g es]} } >> \bar "|"
+      << { ces'4 fes es des8 [ ces] } \\ { \tuplet 3/2 { ces8[ aes es]} \tuplet 3/2 { fes'8[ aes, fes]} \tuplet 3/2 { es'8[ bes g]} \tuplet 3/2 { des'8[ aes es]} } >> \bar "|"
+      << { bes'4 des ces) gis'\( \f } \\ { \tuplet 3/2 { bes,8[ g es]} \tuplet 3/2 { des'8[ bes es,]} \tuplet 3/2 { ces'8[ aes ces]} \tuplet 3/2 { gis'8[ cis, b]} } >> \bar "|"
+      << { cis4 fis b, e } \\ { \tuplet 3/2 { ais,8[ b cis]} \tuplet 3/2 { dis8[ b a]} \tuplet 3/2 { gis8[ a b]} \tuplet 3/2 { cis8[ b ais]} } >> \bar "|"
+      << { \tuplet 3/2 { cis8\)[ b ais]} \tuplet 3/2 { e'8[ dis cis]} \tuplet 3/2 { gis'8[ fis e]} \tuplet 3/2 { dis8[ cis b]} } \\ { fis1( } >> \bar "|"
+      << { bes2. } \\ { ges2.) } >>
+
+% Coda
+      << { r4 } \\ { r4 \p } >> \bar "|"
+      r1 \bar "|"
+      r2. des4( \bar "|"
+      es4 aes ges es \bar "|"
+      f4 des es) bes\( \bar "|"
+      ces4 es des ces~ \bar "|"
+      ces4 bes8 [ aes] bes4\) \bar "|."
+    }
+
+
+    \new Staff \relative c {
+      \clef bass
+      \key ges \major
+      \time 4/4
+      \partial 4
+
+% Exposition
+      \repeat volta 4 {
+      ges4\( \bar "|"
+      f des ges bes \bar "|"
+      c aes des\) g,\( \bar "|"
+      aes des,2.( \bar "|"
+      cis4) es aes\)
+      }
+
+% Development
+      bes,4( \mp \bar "|"
+      c4 es des ais \bar "|"
+      b4) b' \p cis dis( \mp \bar "|"
+      e4 a g f8 [ e] \bar "|"
+      
+      c4) d,4 g a \bar "|"
+      d,4 cis d a' \bar "|"
+      bes4 es, \tuplet 3/2 { es'8[ bes es]} \tuplet 3/2 { g8[ f es]} \bar "|"
+      << { \stemUp \tuplet 3/2 { aes8[ es aes]} \tuplet 3/2 { bes8[ c es]} r2} \\ { \stemDown r2 des,2 } >> \bar "|"
+      \stemNeutral r2 \tuplet 3/2 { des,8 \> [ es f \! ]}
+
+% Recapitulation
+      ges4( \bar "|"
+      f des ges bes \bar "|"
+      c aes des) g,( \bar "|"
+      aes des, es aes \bar "|"
+      bes es, aes) e\( \bar "|"
+      fis dis e cis \bar "|"
+      fis1( \bar "|"
+      ges2.)\)
+
+% Coda
+      << { s4 } \\ { bes4\( } >>  \bar "|"
+      << { \stemUp r2. ges'4( } \\ { \stemDown ces,4 es des bes } >> \bar "|"
+      << { \stemUp aes' ces bes ges } \\ { \stemDown ces, aes des bes } >> \bar "|"
+      << { \stemUp f' ces' des aes } \\ { \stemDown ces, aes bes ces } >> \bar "|"
+      << { \stemUp ces' f, ges) bes( } \\ { \stemDown des,2 ces4\) bes\( } >> \bar "|"
+      << { \stemUp f' bes es, f~ } \\ { \stemDown aes, ges ces, des } >> \bar "|"
+      << { \stemUp f'4 des2) } \\ { \stemDown ges,2.\) } >> \bar "|." 
+
+    }
+  >>
+  \header {
+    piece = "1. G Flat Major"
+  }
+
+\layout { }
+\midi { }
+}

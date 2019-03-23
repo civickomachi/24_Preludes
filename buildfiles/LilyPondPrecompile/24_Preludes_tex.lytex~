@@ -1,0 +1,27 @@
+\documentclass{scrbook}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{hyperref}
+
+
+%\title{特別実験I　レポート \\ (櫻井・Wimmer研)}
+%\author{理学部物理学科\\ 05-161518	小澤 直也 \\ \\ 共同実験者 \\ 曾澤 優輝 \\ 都築 豊\\ \\}
+%\date{2017年9月4日 \\ (実験期間 4月27日-7月11日)}
+%
+%
+%
+%
+\begin{document}
+%
+%
+%\begin{titlepage}
+%\maketitle
+%\thispagestyle{empty}
+%\end{titlepage}
+%
+
+
+
+\lilypondfile[quote, fragment, staffsize=24]{./24_Preludes.ly}
+
+
+\end{document}

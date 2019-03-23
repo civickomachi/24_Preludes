@@ -1,0 +1,18 @@
+\documentclass[]{article}
+
+\begin{document}
+
+通常の LaTeX テキスト。
+
+\begin{lilypond}
+\relative c'' {
+  a4 b c d
+}
+\end{lilypond}
+
+次の LaTeX テキスト。オプションは角括弧の中に入れます。
+
+\begin{lilypond}[fragment,relative=2,quote,staffsize=26,verbatim]
+d4 c b a
+\end{lilypond}
+\end{document}

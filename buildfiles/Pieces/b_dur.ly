@@ -1,0 +1,246 @@
+\score {
+  \new PianoStaff <<
+    \new Staff = "up" {
+      \clef treble
+      \key b \major
+      \time 4/4
+      \partial 4
+
+      \mark "Teneramente con moto"
+
+      \relative c'' {
+      	\slurUp
+        \repeat volta 2{
+	<<
+	{
+	dis4( \bar "|"
+	cis b ais gis \bar "|"
+	fis4. e8 dis4) gis( \bar "|"
+	fis e dis) gis( \bar "|"
+	fis4. e8 dis4)
+	}
+	\\
+	{
+	fis4 \p \bar "|"
+	fis eis cis cis8 [ais] \bar "|"
+	b4 ais b b \bar "|"
+	ais cis b b \bar "|"
+	b ais b
+	}
+	>> 
+	}
+
+	<<
+	{
+	dis4( \bar "|"
+	b' ais gis fis \bar "|"
+	fis4. gis16 [fis] eis4) gis( \bar "|"
+	cis b ais gis \bar "|"
+	gis4. ais16 [gis] fisis4)
+	}
+	\\
+	{
+	ais,4 \mp \bar "|"
+	dis \cresc cis dis ais \bar "|"
+	gis2. cis4 \bar "|"
+	fis eis cis cis \bar "|"
+	dis2 cis4 \!
+	}
+	>>
+
+	<ais' dis, ais>4( \f \bar "|"
+	<dis b dis,> <b dis, b> <gis eis cis>) <gis eis cis>( \bar "|"
+	<cis fis, cis> <b eis, cis> <ais fis cis>)
+
+	<gis cis,>( \mf \bar "|"
+	<fisis cis> <ais dis,> <b dis,>) <ais cis,>( \bar "|"
+	<gis cis,> <dis' gis, eis> \cresc <cis ais fis> << {b8 [ais]} \\ {<fis cis>4} >> \bar "|"
+	<fis dis bis>4 <ais fis dis> <gis eis cis>)
+
+	<dis' fis, dis>( \f \bar "|"
+	<gis, eis cis>) <cis fis, cis>( <fis, dis b>) <b dis,>( \bar "|"
+	<ais cis,> <gis dis> <fis dis gis,> <eis cis>) \bar "|"
+	<dis' fis, dis>( <gis, eis cis> <cis fis, cis> <fis dis ais fis> \bar "|"
+	<bis, gis fis> \dim <cis gis eis> <dis bis gis>) <gis, fis dis>( \bar "|"
+	<eis gis,> <dis fis,> <cis b eis,>) \!
+
+	\repeat volta 2 {
+	<<
+	{
+	ais''4( \bar "|"
+	gis fis eis dis \bar "|"
+	cis4. b8 ais4) dis( \bar "|"
+	cis b ais) dis( \bar "|"
+	cis4. b8 ais4)
+	}
+	\\
+	{
+	cis \p \bar "|"
+	cis bis gis gis8 [eis] \bar "|"
+	fis4 eis fis fis \bar "|"
+	eis gis fis fis \bar "|"
+	fis eis fis
+	}
+	>>
+	}
+
+	\breathe
+
+	<<
+	{s4 \cresc \bar "|" s1 \bar "|"
+	s2. r4 \bar "|"
+	r2. gis4\( \bar "|"
+	<ais cis,>4 \f <cis e,> <b dis,>\)
+	}
+	\\
+	{s4 \bar "|" s1 \bar "|"
+	r2. b,4( \bar "|"
+	cis e dis) b \bar "|"
+	s4 s4 s4
+	}
+	>> 
+
+	<gis' b,>( \dim \bar "|"
+	<ais cis,>) <fis ais,>( <gis b,>) <e gis,>( \bar "|"
+	<fis ais,>) <b, gis>( <cis ais>) \p \breathe
+
+	<<
+	{
+	dis''4( ^\markup {\italic lento} \bar "|"
+	cis b ais gis \bar "|"
+	fis e dis
+	}
+	\\
+	{
+	fis \pp \bar "|"
+	fis eis cis ais \bar "|"
+	b ais b
+	}
+	>>
+
+	\breathe
+
+	<<
+	{
+	gis''( \bar "|"
+	fis e dis)
+	}
+	\\
+	{
+	b \bar "|"
+	ais cis b
+	}
+	>>
+
+	\breathe
+	\clef bass
+
+	<<
+	{
+	gis,,( \bar "|"
+	fis e dis)
+	}
+	\\
+	{
+	b \bar "|"
+	b ais b
+	}
+	>>
+
+	<dis' fis,>( \ppp \bar "|"
+	<cis fis,> <b eis,> <ais cis,> <gis cis,> \bar "|"
+	<fis b,> <e ais,> <dis b>) <gis b,>(_\markup {\italic perdendosi} \bar "|"
+	<fis ais,> <e cis> <dis b>) <gis b,>( \bar "|"
+	<fis b,> <e ais,> <dis fis,>) \bar "|."
+      }
+    }
+    \new Staff = "down" {
+      \clef bass
+      \key b \major
+      \time 4/4
+      \partial 4
+
+      \relative c' {
+        \repeat volta 2 {
+	b4_\markup {\italic con \italic pedale} \bar "|"
+	ais gis fis e \bar "|"
+	dis fis, b e \bar "|"
+	fis fisis gis e \bar "|"
+	fis fis, b 
+	}
+
+	fisis \bar "|"
+	gis ais b bis \bar "|"
+	<< {r4 b'4 cis eis,} \\ {cis2. b4} >> \bar "|"
+	<< {fis'4 gis ais ais} \\ {ais, cis fis e} >> \bar "|"
+	<< {cis'4 ais2} \\ {dis,2.} >>
+
+	<fisis, fisis,>4 \bar "|"
+	<gis gis,> <b b,> <cis cis,> <b b,> \bar "|"
+	<ais ais,> <cis cis,> <fis fis,> <e e,> \bar "|"
+	<dis dis,> <fisis fisis,> <gis gis,> <fis fis,> \bar "|"
+	<eis eis,> <cis cis,> <fis fis,> ais, \bar "|"
+	bis gis cis
+	
+	<b b,> \bar "|"
+	<cis cis,> <ais ais,> <b b,> <gis gis,> \bar "|"
+	<ais ais,> <b b,> <bis bis,> <cis cis,> \bar "|"
+	<b b,> <cis cis,> <ais ais,> <dis dis,> \bar "|"
+	<gis gis,> <cis, cis,> <gis gis,> <bis bis,> \bar "|"
+	<gis cis,> <gis gis,> <gis cis,>
+
+	\repeat volta 2 {
+	fis'' \bar "|"
+	eis dis cis b \bar "|"
+	ais cis, fis b \bar "|"
+	cis cisis dis b \bar "|"
+	cis cis, fis
+	}
+
+	<<
+	{
+	r4 \bar "|"
+	r2. dis4( \bar "|"
+	e gis fis) e \bar "|"
+	gis ais fis
+	}
+	\\
+	{
+	ais,( \bar "|"
+	b dis cis) b \bar "|"
+	ais fis b gis \bar "|"
+	e fis b
+	}
+	>>
+
+	<fis' fis,>4~ \bar "|"
+	<fis fis,>2. <fis fis,>4~ \bar "|"
+	<fis fis,>4 <fis fis,>2 <fis fis,>4~ \bar "|"
+	<fis fis,>2.
+
+	\clef treble
+	b'4 \bar "|"
+	ais gis fis e \bar "|"
+	dis fis, b
+
+	e' \bar "|"
+	fis fisis gis
+
+	\clef bass
+	e,,, \bar "|"
+	fis fis, b
+
+	<b' b,> \bar "|"
+	<ais ais,> <gis gis,> <fis fis,> <e e,> \bar "|"
+	<dis dis,> <fis fis,> b, e \bar "|"
+	fis fisis gis e \bar "|"
+	fis fis, <b b,> \bar "|."
+      }
+    }
+  >>
+  \header {
+    piece = "23. B Major"
+  }
+\layout { }
+\midi { }
+}

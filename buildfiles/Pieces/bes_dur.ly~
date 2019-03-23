@@ -1,0 +1,217 @@
+\score {
+  \new PianoStaff <<
+    \new Staff = "up" {
+
+      \clef treble
+      \key bes \major
+      \time 4/4
+
+      \mark "Andante grazioso"
+
+      \relative c'' {
+
+        r4 \p
+	\tuplet 3/2 {\change Staff = "down" \stemUp f,,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp g,8 [bes \change Staff = "up" \stemDown es]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp aes,8 [bes \change Staff = "up" \stemDown f']} \bar "|"
+	\tuplet 3/2 {\change Staff = "down" \stemUp g,8 [bes \change Staff = "up" \stemDown es]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp f,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp es,8 [bes' \change Staff = "up" \stemDown c]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp f,8 [bes \change Staff = "up" \stemDown d]}
+	\bar "|"
+        r4
+	\tuplet 3/2 {\change Staff = "down" \stemUp f,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp g,8 [bes \change Staff = "up" \stemDown es]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp aes,8 [bes \change Staff = "up" \stemDown f']} \bar "|"
+	\tuplet 3/2 {\change Staff = "down" \stemUp g,8 [bes \change Staff = "up" \stemDown es]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp f,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp es,8 [bes' \change Staff = "up" \stemDown c]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp f,8 [bes \change Staff = "up" \stemDown d]}
+	\breathe
+	\bar "|"
+	<< {\stemUp f'4 g8 [a] bes [a g a]} \\ {\stemDown r8 <d, bes>4 <d bes>8 r8 <es bes>4 <es bes>8} >> \bar "|"
+	<< {\stemUp f4 bes,8 [f'] es2} \\ {\stemDown r8 <d f,>4 <d f,>8 r8 <c f,>4 <c f,>8} >> \bar "|"
+	<< {\stemUp d8 [f g a] bes [a g a]} \\ {\stemDown r8 <d, bes>4 <d bes>8 r8 <es bes>4 <es bes>8} >> \bar "|"
+	<< {\stemUp f8 [bes, a bes] f' [es bes g]} \\ {\stemDown r8 <f d>4 <f d>8 r8 <bes g>4 es,8} >> \breathe \bar "|"
+
+
+	r4
+	\tuplet 3/2 {\change Staff = "down" \stemUp g,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp a8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp bes8 [\change Staff = "up" \stemDown d g]} \bar "|"
+	\tuplet 3/2 {\change Staff = "down" \stemUp a,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp g,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp f,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp g,8 [bes \change Staff = "up" \stemDown d]}
+	\bar "|"
+	r4
+	\tuplet 3/2 {\change Staff = "down" \stemUp g,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp a8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp bes8 [\change Staff = "up" \stemDown d g]} \bar "|"
+	\tuplet 3/2 {\change Staff = "down" \stemUp a,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp g,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp f,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp g,8 [bes \change Staff = "up" \stemDown d]}
+	\breathe
+	\bar "|"
+
+
+	<< {\stemUp bes'4 a8 [bes] c [d a f]} \\ {\stemDown r8 <g d>4 <g d>8 r8 <a f>4 d,8} >> \bar "|"
+	<< {\stemUp g4 f8 [g] a2} \\ {\stemDown r8 <es bes>4 <es bes>8 r8 <f c>4 <f c>8} >> \bar "|"
+	<< {\stemUp f8 [g a bes] c [d a f]} \\ {\stemDown r8 d4 <g d>8 r8 <g es>4 r8} >> \bar "|"
+	<< {\stemUp a8 [g g a] bes2} \\ {\stemDown r8 f4 f8 r8 g4 g8} >>
+	\bar "|"
+
+
+
+	<< {\stemUp
+	r1^\markup {\italic senza \italic rubato}
+	\bar "|"
+	r8 es'16 [d] es [c bes c] d [c d bes] aes [bes c bes]
+	\bar "|"
+	aes8. [bes16] g8. [aes16] f16 [g aes bes] c [d es8]
+	\bar "|"
+	d4 c8 [bes] c8. [bes16] a4
+	\bar "|"
+	bes8. [a16] g8 [a] bes2
+	\bar "|"
+	a4 bes2 r4
+	\bar "|"
+	r2 r8 es,4 d8
+	\bar "|"
+	r8 c16 [d] es [f g a] bes4 f~
+	\bar "|"
+	f8 [c16 d] e [f g e] f8 [c] d [bes]
+	\bar "|"
+	a4 c d8 [c] bes4
+	\bar "|"
+	r2 g'16 [f g e] f4~
+	\bar "|"
+	f1
+	}
+	\\
+	{\stemDown
+	r8 \f bes16 [a] bes [g f g] a [g a f] es [f g f]
+	\bar "|"
+	es16 [d c8~] c8 [d] es4 f~
+	\bar "|"
+	f16 [es d8] es16 [d c8] des8. [es16] f8 [ges]
+	\bar "|"
+	g2 f2
+	\bar "|"
+	g16 [f es8] d16 [e fis8] g2
+	\bar "|"
+	f2 es8 [g16 f] g [es d es]
+	\bar "|"
+	f16 [es f d] c [d es d] c8. [d16] bes8. [c16]
+	\bar "|"
+	\change Staff = "down"
+	\stemUp
+	a8. [bes16] g8 [c~] c [bes16 a]
+	\change Staff = "up"
+	\stemDown
+	bes8 [\change Staff = "down" \stemUp f16 g]
+	\bar "|"
+	\change Staff = "up"
+	\stemDown
+	a4
+	\change Staff = "down"
+	\stemUp
+	bes4
+	\change Staff = "up"
+	\stemDown
+	a4 bes16 [a g8]
+	\bar "|"
+	f8 [\change Staff = "down" \stemUp e16 d]
+	e16 [\change Staff = "up" \stemDown f g \change Staff = "down" \stemUp e]
+	es2^\markup {\italic r.h.-l.h.}
+	\bar "|"
+	r4 r8 bes'16 [a]
+	\change Staff = "up"
+	\stemDown
+	bes4. a8
+	\bar "|"
+	g8 [bes] a2.
+	} >> 
+	\breathe
+	\bar "||"
+
+        r4^"Tempo I" \p
+	\tuplet 3/2 {\change Staff = "down" \stemUp f8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp g,8 [bes \change Staff = "up" \stemDown es]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp aes,8 [bes \change Staff = "up" \stemDown f']} \bar "|"
+	\tuplet 3/2 {\change Staff = "down" \stemUp g,8 [bes \change Staff = "up" \stemDown es]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp f,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp es,8 [bes' \change Staff = "up" \stemDown c]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp f,8 [bes \change Staff = "up" \stemDown d]}
+	\bar "|"
+        r4
+	\tuplet 3/2 {\change Staff = "down" \stemUp f,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp g,8 [bes \change Staff = "up" \stemDown es]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp aes,8 [bes \change Staff = "up" \stemDown f']} \bar "|"
+	\tuplet 3/2 {\change Staff = "down" \stemUp g,8 [bes \change Staff = "up" \stemDown es]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp f,8 [bes \change Staff = "up" \stemDown d]}
+	\tuplet 3/2 {\change Staff = "down" \stemUp es,8 [bes' \change Staff = "up" \stemDown c]}
+	<< {\tuplet 3/2 {\change Staff = "down" \stemUp f,8 [bes \change Staff = "up" \stemDown d~]} \bar "|" d1}
+	\\
+	{\set tieWaitForNote = ##t \change Staff = "down" \stemUp \omit TupletNumber \tuplet 3/2 {f,8~ [\tieUp bes~ \change Staff = "up" \stemDown d]} \bar "|" \change Staff = "down" <bes f>1} >>
+	\bar "|."
+      }
+    }
+    \new Staff = "down" {
+
+      \clef bass
+      \key bes \major
+      \time 4/4
+
+      \relative c {
+
+        bes,1~\tenuto \bar "|" bes1 \bar "|" bes1~\tenuto \bar "|" bes1 \bar "|"
+	<< {\stemUp r8 <bes'' f>4 <bes f>8 r8 <bes g>4 <bes g>8} \\ {\stemDown bes,2 c2} >> \bar "|" 
+	<< {\stemUp r8 <bes' f>4 <bes f>8 r8 <a f>4 <a f>8} \\ {\stemDown d,2 c2} >> \bar "|"
+	<< {\stemUp r8 <bes' f>4 <bes f>8 r8 <bes g>4 <bes g>8} \\ {\stemDown bes,2 c2} >> \bar "|" 
+	<< {\stemUp r8 <bes' f>4 <bes f>8 r8 <bes es>4 <bes es>8} \\ {\stemDown d,2 c2} >> \bar "|"
+
+
+	g,1~\tenuto \bar "|" g1 \bar "|" g1~\tenuto \bar "|" g1 \bar "|"
+
+
+	<< {\stemUp r8 <g'' d>4 <g d>8 r8 <f c>4 <f c>8} \\ {\stemDown g,2 a2} >> \bar "|" 
+	<< {\stemUp r8 <g' es>4 <g es>8 r8 <a f>4 <a f>8} \\ {\stemDown bes,2 c2} >> \bar "|"
+	<< {\stemUp r8 <bes' g>4 <bes g>8 r8 <c g>4 <c g>8} \\ {\stemDown d,2 es2} >> \bar "|" 
+	<< {\stemUp r8 <c' a>4 <c a>8 r8 <es bes>4 <es bes>8} \\ {\stemDown f,2 g2} >> \bar "|"
+	
+
+	\stemDown
+	<g, g,>4 r2. \bar "|"
+	r1 \bar "|"
+	r1 \bar "|"
+	r8 bes'16 [a] bes [g f g] a [g a f] es [f g f]
+	\bar "|"
+	es8. [f16] d4 r8 d'16 [c] d [bes a bes]
+	\bar "|"
+	c16 [bes c a] g [a bes a] g8. [a16] bes4
+	\bar "|"
+	a4 g aes g
+	\bar "|"
+	f4 es d des
+	\bar "|"
+	c2 d4 g,16 [a bes8]
+	\bar "|"
+	c4 bes f ges
+	\bar "|"
+	r4 c2 f,4~
+	\bar "|"
+	f1
+	\bar "||"
+
+        bes,1~_\tenuto \bar "|" bes1 \bar "|" bes1~_\tenuto \bar "|" bes1~ \bar "|" bes1 \bar "|."
+      }
+    }
+  >>
+  \header {
+    piece = "9. B Flat Major"
+  }
+\layout { }
+\midi { }
+}
